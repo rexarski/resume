@@ -23,6 +23,7 @@
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
+\setlength{\footskip}{3.60004pt}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -112,16 +113,16 @@
 
 %----------HEADING-----------------
 %\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%  \textbf{\href{https://qrui.xyz}{\Large Rui Qiu}} & Email : \href{mailto:rq47@georgetown.edu}{rq47@georgetown.edu}\\
-%  \href{https://qrui.xyz}{https://qrui.xyz} & Mobile : +1-571-363-5917 \\
+%  \textbf{\href{https://rexarski.com}{\Large Rui Qiu}} & Email : \href{mailto:rq47@georgetown.edu}{rq47@georgetown.edu}\\
+%  \href{https://rexarski.com}{https://rexarski.com} & Mobile : +1-571-363-5917 \\
 %\end{tabular*}
 
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
 \newcommand{\yourName}{Rui Qiu}
-\newcommand{\yourWebsite}{qrui.xyz}
-\newcommand{\yourWebsiteLink}{https://qrui.xyz}
+\newcommand{\yourWebsite}{rexarski.com}
+\newcommand{\yourWebsiteLink}{https://rexarski.com}
 \newcommand{\yourEmail}{rq47@georgetown.edu}
 \newcommand{\yourPhone}{(571)363-5917}
 \newcommand{\githubUserName}{rexarski}
@@ -175,11 +176,22 @@
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
-  	\resumeSubheading{Georgetown University}{Washington, D.C.}{Teaching Assistant}{Aug. 2021 -- Present}
+    \resumeSubheading
+    {International Finance Corporation}{Washington, D.C.}
+    {Data Scientist Intern}{Aug. 2016 -- Present}
+    \resumeItemListStart
+        \resumeItemAlt
+        {Craft the right test harness to ensure machine learning models are tested using appropriate model evaluation techniques (bias detection)}
+        \resumeItemAlt
+        {Refine/Retrain MALENA (Machine Learning ESG Analyst) Natural Language Processing \& Natural Language Understanding models}
+        \resumeItemAlt
+        {Conduct exploratory data discovery, cleaning, and analysis to address use cases}
+    \resumeItemListEnd
+  	\resumeSubheading{Georgetown University}{Washington, D.C.}{Teaching Assistant / Bootcamp Manager}{Aug. 2021 -- Present}
   	\resumeItemListStart
   		\resumeItemAlt
           {Work as a graduate teaching assistant for ANLY-503 (Advanced Data Visualization) and ANLY-560 (Time Series)}
-         \resumeItemAlt{Deliver weekly office hours and assignment grading for a core of 30+ students}
+         \resumeItemAlt{Deliver weekly office hours and assignment grading for a group of 30+ students}
          \resumeItemAlt{Assist in sharing course-related materials, managing course Slack channel and GitHub organization}
   	\resumeItemListEnd
 
@@ -223,35 +235,22 @@
           {Created functional prototypes that increased communication efficiency by 30\% for clients}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Zmate Network Technology}{Shenzhen, China}
-      {Data Analyst Intern}{Aug. 2016 -- Dec. 2016}
-      \resumeItemListStart
-        \resumeItemAlt
-          {Cleaned 10TB of unstructured data of company registration information with SQL and Python, which reduced the storage space by 50\% and increased the data accessibility}
-        \resumeItemAlt
-          {Utilized Python to implement supervised machine learning techniques to generate an evaluation metric of companies' intellectual property awareness, which highlighted 3\% of potential customers for the marketing team}
-        \resumeItemAlt
-          {Implemented an automatic domain name generating system based on Chinese naming conventions, which also cross-checked with the existing data, leading to full automation in the routine of the marketing team}
-      \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-  	\resumeSubItem{Basketball Analytics and Beyond: Analysis of 188,946 Shots}{A project on various basketball related topics, both on-court and off-court; \href{https://rexarski.github.io/rqiu.georgetown.domains}{\underline{Website}}}
-    \resumeSubItem{No Pie Newsletter}{A newsletter curating the latest articles, packages, tools and podcasts about data visualization; \href{https://qrui.xyz/nopie}{\underline{Website}}, \href{https://t.me/itsnopie}{\underline{Telegram}}}
+    \resumeSubItem{What Ingredients Are You Tasting In Authentic Japanese Flavors?}{A comprehensive interactive visualization project on Japanese cuisine with D3, plotly and leaflet;}\href{https://celeritasml.github.io/project-japanese-cuisine/}{\underline{Website}}
+  	\resumeSubItem{Basketball Analytics and Beyond: Analysis of 188,946 Shots}{A project on various basketball related topics, both on-court and off-court; \href{https://rexarski.github.io/bba}{\underline{Website}}}
+    \resumeSubItem{No Pie Newsletter}{A newsletter curating the latest articles, packages, tools and podcasts about data visualization; \href{https://github.com/rexarski/2nd-blog/tree/main/content/nopie}{\underline{Archive}}, \href{https://t.me/itsnopie}{\underline{Telegram}}}
     \resumeSubItem{xG Visualization Pipeline (R, sports analytics, visualization)}
-      {An automation script to parse and clean raw data from soccer games and visualize the details in 3 different aspects; \href{https://qrui.xyz/posts/2021-04-07-visualize-xg/}{\underline{Blog}}, \href{https://github.com/rexarski/box2box}{\underline{repository}}}
+      {An automation script to parse and clean raw data from soccer games and visualize the details in 3 different aspects; \href{https://twitter.com/rexarski/status/1377860255271428097?s=20&t=TgdEjpB-rq6nS0eOTtt32A}{\underline{Tweet}}, \href{https://github.com/rexarski/2nd-blog/blob/main/content/posts/2021-04-07-visualize-xg.md}{\underline{archive}}, \href{https://github.com/rexarski/box2box}{\underline{repository}}}
     \resumeSubItem{tarantino (R package development)}
       {An R package that generates color palettes inspired by Quentin Tarantino's movies for visualization; Featured in \href{https://rweekly.org/2021-W14.html}{\underline{R-Weekly newsletter}}; \href{https://github.com/rexarski/tarantino}{\underline{Repository}}}
     \resumeSubItem{@canberramapbot (R, API)}{A Twitter bot posts bird's-eye view over Canberra periodically; \href{https://github.com/rexarski/canberramapbot}{\underline{Repository}}, \href{https://twitter.com/canberramapbot}{\underline{Twitter}}}
     \resumeSubItem{sentRy (R Server, AWS, API)}
-      {A DevOps monitoring tool that automatically sends Django error logs to subscribers' Telegram account; Reduced the total amount of notifications by 40\% via aggregation and trimming redundant information; \href{https://qrui.xyz/posts/2020-02-14-sentry/}{\underline{Blog}}, \href{https://github.com/rexarski/sentRy}{\underline{repository}}}
-    \resumeSubItem{aussie (R, Selenium, Python, crawler, data cleaning)}
-      {A collection of Python and R web crawlers that scraped over 76,000 courses offered by 25 Australian universities in 2020; Cleansed and wrangled the data into a tidied structure for further analysis; \href{https://github.com/rexarski/AUSSIE}{\underline{Repository}}}
+      {A DevOps monitoring tool that automatically sends Django error logs to subscribers' Telegram account; Reduced the total amount of notifications by 40\% via aggregation and trimming redundant information; \href{https://github.com/rexarski/2nd-blog/blob/main/content/posts/2020-02-14-sentry.md}{\underline{Blog}}, \href{https://github.com/rexarski/sentRy}{\underline{repository}}}
   \resumeSubHeadingListEnd
 
   \updateinfo[\today]
