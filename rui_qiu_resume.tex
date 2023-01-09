@@ -31,9 +31,9 @@
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -66,17 +66,17 @@
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \small\textbf{#1} & {\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+      \small\textbf{#1} & {\small #2} \\
+      \small\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubheadingMore}[6]{
@@ -85,13 +85,13 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5} & \textit{\small #6} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-8pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -154,19 +154,19 @@
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
   \resumeSubHeadingListStart
-    \item{
+    \item\small{
       \textbf{Programming}{: SQL, Python, R, JavaScript, HTML, CSS, Java}
     }\vspace{-8pt}
-    \item{
+    \item\small{
       \textbf{Machine Learning}{: tidyverse, tidymodels, caret, jupyter-notebook, scikit-learn, numpy, pandas}
     }\vspace{-8pt}
-    \item{
+    \item\small{
       \textbf{Visualization}{: ggplot2, R Shiny, leaflet, d3.js, matplotlib, seaborn, bokeh, plotly}
     }\vspace{-8pt}
-    \item{
+    \item\small{
       \textbf{Data Science}{: A/B testing, ETL, pipeline (cleansing, wrangling, visualization, modeling, interpretation), scraping, feature engineering, NLP, cluster analysis, time series analysis, PCA, stochastic process, experimental design, hypothesis testing}
     }\vspace{-8pt}
-    \item{
+    \item\small{
       \textbf{Big Data \& Miscellaneous Technologies}{: AWS (EC2, EMR, S3, SageMaker), Azure, databricks, Spark, Hadoop, MongoDB, Docker, Linux, Shell, Hugo, Figma}
       % \hfill
       % \textbf{}{: }
@@ -181,21 +181,20 @@
     {Data Scientist Intern}{May 2022 -- Present}
     \resumeItemListStart
         \resumeItemAlt
-        {Build metrics (fairness, explainability, adversarial robustness score, etc.) to measure the performance of MALENA (Machine Learning ESG Analyst)}
+        {Develop metrics (such as fairness, explainability, and adversarial robustness score) to evaluate the performance of MALENA (Machine Learning ESG Analyst)}
         \resumeItemAlt
-        {Train and fine-tune transformer-based MALENA Natural Language Processing \& Natural Language Understanding models (RoBERTa and DistilBERT) to improve model robustness and stability}
+        {Train and fine-tune transformer-based NLP and NLU models (including RoBERTa and DistilBERT) to enhance the robustness and stability of MALENA}
         \resumeItemAlt
-        {Work with CEG and IFC stakeholders to understand requirements and design innovative dashboards for machine learning inference data visualization}
+        {Collaborate with CEG and IFC stakeholders to understand their requirements and designed innovative dashboards for machine learning inference data visualization}
         \resumeItemAlt
-        {Clean up and schedule batch jobs in Databricks cluster to provide periodic summary statistics to dashboard}
+        {Improve efficiency by cleaning up and scheduling batch jobs in the Databricks cluster, which provided periodic summary statistics for the dashboard}
     \resumeItemListEnd
-  	\resumeSubheading{Georgetown University}{Washington, D.C.}{Teaching Assistant / Bootcamp Manager}{Aug. 2021 -- Aug. 2022}
-  	\resumeItemListStart
-  		\resumeItemAlt
-          {Worked as a graduate teaching assistant for ANLY-503 (Advanced Data Visualization) and ANLY-560 (Time Series)}
-         \resumeItemAlt{Delivered weekly office hours and assignment grading for a group of 30+ students}
-         \resumeItemAlt{Assisted in sharing course-related materials, managing course Slack channel and GitHub organization}
-  	\resumeItemListEnd
+
+    \resumeSubheading{Georgetown University}{Washington, D.C.}{Teaching Assistant / Bootcamp Manager}{Aug. 2021 -- Aug. 2022}
+    \resumeItemListStart
+      \resumeItemAlt{Served as a graduate teaching assistant for ANLY-503 (Advanced Data Visualization) and ANLY-560 (Time Series), providing weekly office hours and grading assignments for a group of over 30 students}
+      \resumeItemAlt{Facilitated course materials, managed the course Slack channel, and organized the course GitHub organization}
+    \resumeItemListEnd
 
     \resumeSubheading
       {K2L Canberra}{Canberra, Australia}
@@ -204,13 +203,13 @@
         \resumeItemAlt
           {Utilized Python and SQL to track and analyze product data, resulting in a 15\% increase in recommendation accuracy}
         \resumeItemAlt
-          {Built data visualization with MySQL and R for product KPIs that reduced manual reporting time by 3 hours per week}
+          {Created data visualizations with MySQL and R for product key performance indicators (KPIs), reducing manual reporting time by 3 hours per week}
         \resumeItemAlt
-          {Improved UX measures by 20\% through increased user feedback collection and frequent iteration to customer needs}
+          {Improved user experience (UX) measures by 20\% through increased user feedback collection and frequent iteration based on customer needs}
         \resumeItemAlt
-          {Collaborated with the engineering team to launch an internal kanban tool for a better work-from-home experience}
+          {Worked with the engineering team to launch an internal kanban tool to improve the work-from-home experience}
         \resumeItemAlt
-          {Launched 6 products (websites, mobile apps, and web apps) for clients in 2 years for a total 65\% revenue gain}
+          {Successfully launched 6 products (including websites, mobile apps, and web apps) for clients in 2 years, resulting in a 65\% revenue increase}
       \resumeItemListEnd
 
 % --------Multiple Positions Heading------------
@@ -228,13 +227,13 @@
       {Co-founder/Data Analyst}{Feb. 2019 -- June 2019}
       \resumeItemListStart
         \resumeItemAlt
-          {Led a team of 12 to develop an online Q\&A community combining the idea of StackOverflow and TikTok which grew to 1,000 users in 3 months}
+          {Successfully led a team of 12 in developing an online Q\&A community, which merged the concepts of StackOverflow and TikTok. The community grew to 1,000 users in just 3 months}
         \resumeItemAlt
-          {Performed market competition analysis based on scraped data to direct the initial product planning}
+          {Conducted market competition analysis using scraped data to inform the initial product planning process}
         \resumeItemAlt
-          {Analyzed and strategized regarding business goals, schedules, and budgeting in the early stage of the development}
+          {Analyzed business goals, schedules, and budgeting during the early stages of development and created strategies to align with these objectives}
         \resumeItemAlt
-          {Created functional prototypes that increased communication efficiency by 30\% for clients}
+          {Developed functional prototypes that improved communication efficiency by 30\% for clients}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
