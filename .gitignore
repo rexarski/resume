@@ -25,3 +25,8 @@ Archieve/
 
 ## macOS
 .DS_Store
+
+# Node / Astro
+node_modules/
+dist/
+.astro/
