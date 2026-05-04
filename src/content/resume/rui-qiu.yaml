@@ -1,0 +1,102 @@
+# src/content/resume/rui-qiu.yaml
+name: Rui Qiu
+
+contact:
+  email: rq47@georgetown.edu
+  phone: "(571) 363-5917"
+  website:
+    label: rexarski.com
+    href: https://rexarski.com
+  links:
+    - label: github/rexarski
+      href: https://github.com/rexarski
+    - label: linkedin/rqiu
+      href: https://www.linkedin.com/in/rqiu
+
+education:
+  - school: Georgetown University
+    location: Washington D.C., United States
+    degree: "Master of Science in Data Science and Analytics. cGPA: 4.0"
+    dates: Aug. 2021 – May 2023
+  - school: The Australian National University
+    location: Canberra, Australia
+    degree: Master of Science in Statistics
+    dates: Feb. 2017 – Dec. 2018
+  - school: University of Toronto
+    location: Toronto, Canada
+    degree: Honors B.Sc. with Distinction (Maths, Statistics, Computer Science)
+    dates: Sept. 2011 – June 2016
+
+skills:
+  - category: Programming
+    items: Python, R, SQL, JavaScript, HTML, CSS, Java
+  - category: Machine Learning
+    items: pytorch, langchain, tidyverse, tidymodels, caret, scikit-learn, numpy, pandas
+  - category: Visualization
+    items: ggplot2, Shiny, d3.js, matplotlib, seaborn, plotly, leaflet, bokeh
+  - category: Data Science
+    items: A/B testing, ETL pipelines, feature engineering, NLP, time series, PCA, hypothesis testing
+  - category: Big Data & Tooling
+    items: AWS (EC2, EMR, S3, SageMaker), Azure, Databricks, Spark, Hadoop, MongoDB, Docker, Linux, Hugo, Figma
+
+experience:
+  - company: International Finance Corporation (World Bank Group)
+    location: Washington, D.C.
+    title: Data Scientist
+    dates: May 2022 – Present
+    bullets:
+      - "Leveraged GPT-3.5 and **LangChain** to enable contextual Q&A on IFC's ESG reports, saving ~90% of analyst extraction time."
+      - "Fine-tuned **ClimateBERT** on climate-related downstream tasks, improving fact-checking accuracy by 6%."
+      - "Integrated the model into MALENA (Machine Learning ESG Analyst), demonstrating real-world utility for NLP tasks."
+      - "Designed interactive dashboards with stakeholders for clearer insight communication."
+
+  - company: Georgetown University
+    location: Washington, D.C.
+    title: Teaching Assistant / Bootcamp Manager
+    dates: Aug. 2021 – Aug. 2022
+    bullets:
+      - "Graduate TA for ANLY-503 (Advanced Data Visualization) and ANLY-560 (Time Series); held weekly office hours and graded for 30+ students."
+      - "Facilitated course materials, managed the course Slack channel, and organized the course GitHub organization."
+
+  - company: K2L Canberra
+    location: Canberra, Australia
+    title: Product Data Analyst
+    dates: July 2019 – June 2021
+    bullets:
+      - "Used Python and SQL to track product data, increasing recommendation accuracy by 15%."
+      - "Built MySQL/R visualizations for KPIs, cutting manual reporting time by 3 hours per week."
+      - "Improved UX metrics by 20% via increased feedback collection and rapid iteration on customer needs."
+      - "Launched 6 client products (websites, mobile and web apps) in 2 years, contributing to a 65% revenue increase."
+
+  - company: K2L
+    location: Canberra, Australia
+    title: Co-founder / Data Analyst
+    dates: Feb. 2019 – June 2019
+    bullets:
+      - "Led a team of 12 in developing an online Q&A community blending StackOverflow and TikTok concepts; grew to 1,000 users in 3 months."
+      - "Conducted market competition analysis using scraped data to inform initial product planning."
+      - "Developed functional prototypes that improved client communication efficiency by 30%."
+
+projects:
+  - name: What Ingredients Are You Tasting In Authentic Japanese Flavors?
+    description: Comprehensive interactive visualization on Japanese cuisine with D3, plotly and leaflet.
+    links:
+      - label: Website
+        href: https://celeritasml.github.io/project-japanese-cuisine/
+  - name: Basketball Analytics and Beyond
+    description: A project on various basketball-related topics, both on-court and off-court.
+    links:
+      - label: Website
+        href: https://rexarski.github.io/bba
+  - name: tarantino
+    description: An R package generating color palettes inspired by Quentin Tarantino's films for visualization.
+    links:
+      - label: R-Weekly
+        href: https://rweekly.org/2021-W14.html
+      - label: repository
+        href: https://github.com/rexarski/tarantino
+  - name: "@canberramapbot"
+    description: A Twitter bot that uses Mapbox and Twitter APIs to post bird's-eye views over Canberra.
+    links:
+      - label: Repository
+        href: https://github.com/rexarski/canberramapbot
