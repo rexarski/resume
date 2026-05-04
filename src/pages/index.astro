@@ -1,0 +1,77 @@
+---
+// src/pages/index.astro
+import { getEntry } from 'astro:content';
+import ResumeLayout from '../layouts/ResumeLayout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+import EntryHeading from '../components/EntryHeading.astro';
+import BulletList from '../components/BulletList.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+
+import '../styles/screen.css';
+import '../styles/print.css';
+
+const r = await getEntry('resume', 'rui-qiu');
+if (!r) throw new Error('Resume content not found at src/content/resume/rui-qiu.yaml');
+const data = r.data;
+
+const today = new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  .format(new Date());
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const pdfHref = `${baseUrl}/rui_qiu_resume.pdf`;
+const repoHref = 'https://github.com/rexarski/resume';
+---
+<ResumeLayout name={data.name}>
+  <div class="utility-bar no-print">
+    <a href={pdfHref}>Download PDF</a>
+    <a href={repoHref}>Source</a>
+  </div>
+
+  <div class="page-frame">
+    <div class="resume">
+      <Header
+        name={data.name}
+        email={data.contact.email}
+        phone={data.contact.phone}
+        website={data.contact.website}
+        links={data.contact.links}
+      />
+
+      <Section title="Education">
+        {data.education.map((e) => (
+          <EntryHeading
+            primary={e.school}
+            primaryRight={e.location}
+            secondary={e.degree}
+            secondaryRight={e.dates}
+          />
+        ))}
+      </Section>
+
+      <Section title="Skills" class="skills-section">
+        <Skills rows={data.skills} />
+      </Section>
+
+      <Section title="Experience">
+        {data.experience.map((x) => (
+          <EntryHeading
+            primary={x.company}
+            primaryRight={x.location}
+            secondary={x.title}
+            secondaryRight={x.dates}
+          >
+            <BulletList items={x.bullets} />
+          </EntryHeading>
+        ))}
+      </Section>
+
+      <Section title="Projects">
+        <Projects items={data.projects} />
+      </Section>
+
+      <div class="footer">Last updated on {today}</div>
+    </div>
+  </div>
+</ResumeLayout>
