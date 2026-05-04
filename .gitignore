@@ -1,0 +1,27 @@
+# Archieve
+Archieve/
+
+# Superpowers brainstorm session files
+.superpowers/
+
+# Local Claude Code session settings
+.claude/settings.local.json
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.synctex.gz
+*.fdb_latexmk
+
+## macOS
+.DS_Store

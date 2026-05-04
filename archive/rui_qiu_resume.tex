@@ -1,0 +1,259 @@
+%-------------------------
+% Resume in Latex
+% Author: Rui Qiu
+% Original Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[sfdefault]{roboto}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\setlength{\footskip}{3.60004pt}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemAlt}[1]{
+  \item\small{
+    #1 \vspace{-3pt}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & {\small #2} \\
+      \small\textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubheadingMore}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize Last updated on #1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%  \textbf{\href{https://rexarski.com}{\Large Rui Qiu}} & Email : \href{mailto:rq47@georgetown.edu}{rq47@georgetown.edu}\\
+%  \href{https://rexarski.com}{https://rexarski.com} & Mobile : +1-571-363-5917 \\
+%\end{tabular*}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Rui Qiu}
+\newcommand{\yourWebsite}{rexarski.com}
+\newcommand{\yourWebsiteLink}{https://rexarski.com}
+\newcommand{\yourEmail}{rq47@georgetown.edu}
+\newcommand{\yourPhone}{(571)363-5917}
+\newcommand{\githubUserName}{rexarski}
+\newcommand{\linkedInUserName}{rqiu}
+
+\begin{center}
+    \Huge \scshape \yourName \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$
+    \href{\yourWebsiteLink}{\underline{\yourWebsite}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} $|$
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+%    \resumeSubheadingMore{}{}{}{}{}{}
+    \resumeSubheading
+      {Georgetown University}{Washington D.C., United States}
+      {Master of Science in Data Science and Analytics. cGPA: 4.0}{Aug. 2021 -- May 2023 (Est.)}
+    \resumeSubheading
+      {The Australian National University}{Canberra, Australia}
+      {Master of Science in Statistics}{Feb. 2017 -- Dec. 2018}
+    \resumeSubheading
+      {University of Toronto}{Toronto, Canada}
+      {Honors Bachelor of Science with Distinction (Maths, Statistics and Computer Science)}{Sept. 2011 -- June 2016}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item\small{
+      \textbf{Programming}{: Python, R, SQL, JavaScript, HTML, CSS, Java}
+    }\vspace{-8pt}
+    \item\small{
+      \textbf{Machine Learning}{: pytorch, langchain, tidyverse, tidymodels, caret, jupyter-notebook, scikit-learn, numpy, pandas}
+    }\vspace{-8pt}
+    \item\small{
+      \textbf{Visualization}{: ggplot2, Shiny, d3.js, matplotlib, seaborn, plotly, leaflet, bokeh}
+    }\vspace{-8pt}
+    \item\small{
+      \textbf{Data Science}{: A/B testing, ETL, pipeline (cleansing, wrangling, visualization, modeling, interpretation), scraping, feature engineering, natural language processing, cluster analysis, time series analysis, PCA, stochastic process, experimental design, hypothesis testing}
+    }\vspace{-8pt}
+    \item\small{
+      \textbf{Big Data \& Miscellaneous Technologies}{: AWS (EC2, EMR, S3, SageMaker), Azure, Databricks, Spark, Hadoop, MongoDB, Docker, Linux, Shell, Hugo, Figma}
+      % \hfill
+      % \textbf{}{: }
+    }\vspace{-8pt}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {International Finance Corporation (World Bank Group)}{Washington, D.C.}
+    {Data Scientist}{May 2022 -- Present}
+    \resumeItemListStart
+        \resumeItemAlt{Leverage GPT-3.5 and LangChain to enable question answering in context for IFC's ESG reports, saving almost 90\% of the time for analysts to extract information from the reports}
+        \resumeItemAlt{Develop and fine-tune transformer-based language models (ClimateBERT) for climate-related downstream tasks, improve the accuracy of factchecking by 6\% (WIP)}
+        \resumeItemAlt{Conduct extensive experimentation and hyperparameter tuning to optimize the model's performance on various language tasks, such as text classification, sentiment analysis, and question answering}
+        \resumeItemAlt{Evaluate the model's performance using both established and experimental benchmarks and demonstrate its effectiveness on several language tasks}
+        \resumeItemAlt{Integrate the model into a larger natural language processing (NLP) application, MALENA (Machine Learning ESG Analyst), demonstrating its usefulness for real-world language processing tasks}
+        \resumeItemAlt{Conduct research to improve the model's fairness, explainability, or adversarial robustness, ensuring that the model is transparent and fair in its decision-making process}
+        \resumeItemAlt{Collaborate with stakeholders to understand their requirements and designed interactive dashboards for better insight communication}
+    \resumeItemListEnd
+
+    \resumeSubheading{Georgetown University}{Washington, D.C.}{Teaching Assistant / Bootcamp Manager}{Aug. 2021 -- Aug. 2022}
+    \resumeItemListStart
+      \resumeItemAlt{Served as a graduate teaching assistant for ANLY-503 (Advanced Data Visualization) and ANLY-560 (Time Series), providing weekly office hours and grading assignments for a group of over 30 students}
+      \resumeItemAlt{Facilitated course materials, managed the course Slack channel, and organized the course GitHub organization}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {K2L Canberra}{Canberra, Australia}
+      {Product Data Analyst}{July 2019 -- June 2021}
+      \resumeItemListStart
+        \resumeItemAlt
+          {Utilized Python and SQL to track and analyze product data, resulting in a 15\% increase in recommendation accuracy}
+        \resumeItemAlt
+          {Created data visualizations with MySQL and R for product key performance indicators (KPIs), reducing manual reporting time by 3 hours per week}
+        \resumeItemAlt
+          {Improved user experience (UX) metrics by 20\% through increased user feedback collection and frequent iteration based on customer needs}
+        \resumeItemAlt
+          {Worked with the engineering team to launch an internal kanban tool to improve the work-from-home experience}
+        \resumeItemAlt
+          {Successfully launched 6 products (including websites, mobile apps, and web apps) for clients in 2 years, resulting in a 65\% revenue increase}
+      \resumeItemListEnd
+
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {K2L}{Canberra, Australia}
+      {Co-founder/Data Analyst}{Feb. 2019 -- June 2019}
+      \resumeItemListStart
+        \resumeItemAlt
+          {Successfully led a team of 12 in developing an online Q\&A community, which merged the concepts of StackOverflow and TikTok. The community grew to 1,000 users in just 3 months}
+        \resumeItemAlt
+          {Conducted market competition analysis using scraped data to inform the initial product planning process}
+        \resumeItemAlt
+          {Analyzed business goals, schedules, and budgeting during the early stages of development and created strategies to align with these objectives}
+        \resumeItemAlt
+          {Developed functional prototypes that improved communication efficiency by 30\% for clients}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{What Ingredients Are You Tasting In Authentic Japanese Flavors?}{A comprehensive interactive visualization project on Japanese cuisine with D3, plotly and leaflet.}\href{https://celeritasml.github.io/project-japanese-cuisine/}{\underline{Website}}
+  	\resumeSubItem{Basketball Analytics and Beyond}{A project on various basketball related topics, both on-court and off-court.}\href{https://rexarski.github.io/bba}{\underline{Website}}
+    \resumeSubItem{No Pie Newsletter}{A newsletter curating the latest articles, packages, tools and podcasts about data visualization.}\href{https://github.com/rexarski/2nd-blog/tree/main/content/nopie}{\underline{Archive}}
+    \resumeSubItem{xG Visualization Pipeline}
+      {An automation R script to parse and clean raw data from soccer games.}\href{https://twitter.com/rexarski/status/1377860255271428097?s=20&t=TgdEjpB-rq6nS0eOTtt32A}{\underline{Tweet}}, \href{https://github.com/rexarski/2nd-blog/blob/main/content/posts/2021-04-07-visualize-xg.md}{\underline{archive}}, \href{https://github.com/rexarski/box2box}{\underline{repository}}
+    \resumeSubItem{tarantino}
+      {An R package that generates color palettes inspired by Quentin Tarantino’s movies for visualization.}\href{https://rweekly.org/2021-W14.html}{\underline{R-Weekly}}, \href{https://github.com/rexarski/tarantino}{\underline{repository}}
+    \resumeSubItem{@canberramapbot}{A Twitter bot utilizes Mapbox and Twitter APIs to post bird’s-eye view over Canberra.}\href{https://github.com/rexarski/canberramapbot}{\underline{Repository}}, \href{https://twitter.com/canberramapbot}{\underline{Twitter}}
+    \resumeSubItem{sentRy}
+      {A DevOps monitoring tool that sends Django error logs to subscribers’ Telegram account. Reduced the total amount of notifications by 40\% via aggregation and trimming redundant information.}\href{https://github.com/rexarski/2nd-blog/blob/main/content/posts/2020-02-14-sentry.md}{\underline{Blog}}, \href{https://github.com/rexarski/sentRy}{\underline{repository}}
+  \resumeSubHeadingListEnd
+
+  \updateinfo[\today]
+
+%-------------------------------------------
+\end{document}
