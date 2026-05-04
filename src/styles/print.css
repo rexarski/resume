@@ -3,7 +3,8 @@
 
 @media print {
   html, body { background: white; }
-  .page-frame, .utility-bar, .no-print { display: none !important; }
+  .utility-bar, .no-print { display: none !important; }
+  .page-frame { display: block; padding: 0; background: white; }
   .resume {
     box-shadow: none;
     border: none;
