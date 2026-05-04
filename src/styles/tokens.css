@@ -1,0 +1,25 @@
+/* src/styles/tokens.css */
+:root {
+  /* Color */
+  --ink:       #111418;
+  --ink-soft:  #3a4150;
+  --rule:      #d8dde5;
+  --paper:     #ffffff;
+  --accent:    #002855;
+  --accent-underline: rgba(0, 40, 85, 0.55);
+  --page-bg:   #eceef2;
+
+  /* Typography */
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --fs-name:    22pt;
+  --fs-section: 11.5pt;
+  --fs-body:    9.75pt;
+  --fs-meta:    9.25pt;
+  --lh-body:    1.32;
+  --lh-tight:   1.18;
+
+  /* Rhythm */
+  --space-section: 10pt;
+  --space-entry:   5pt;
+  --space-bullet:  2pt;
+}
