@@ -1,0 +1,21 @@
+---
+// src/components/EntryHeading.astro
+interface Props {
+  primary: string;
+  primaryRight: string;
+  secondary: string;
+  secondaryRight: string;
+}
+const { primary, primaryRight, secondary, secondaryRight } = Astro.props;
+---
+<div class="entry">
+  <div class="row">
+    <div class="primary">{primary}</div>
+    <div class="right">{primaryRight}</div>
+  </div>
+  <div class="row">
+    <div class="secondary">{secondary}</div>
+    <div class="right secondary">{secondaryRight}</div>
+  </div>
+  <slot />
+</div>

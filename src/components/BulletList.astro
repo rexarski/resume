@@ -1,0 +1,9 @@
+---
+// src/components/BulletList.astro
+import { inline } from '../lib/markdown';
+interface Props { items: string[] }
+const { items } = Astro.props;
+---
+<ul class="bullets">
+  {items.map((item) => <li set:html={inline(item)} />)}
+</ul>
