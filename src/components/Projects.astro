@@ -1,0 +1,23 @@
+---
+// src/components/Projects.astro
+import { inline } from '../lib/markdown';
+interface Link { label: string; href: string }
+interface Project { name: string; description: string; links: Link[] }
+interface Props { items: Project[] }
+const { items } = Astro.props;
+---
+{items.map((p) => (
+  <div class="project">
+    <span class="pname">{p.name}</span>
+    {' — '}
+    <span class="pdesc" set:html={inline(p.description)} />
+    {' '}
+    <span class="plinks">
+      {p.links.map((l, i) => (
+        <>
+          {i === 0 ? '[' : ' ['}<a href={l.href}>{l.label}</a>]
+        </>
+      ))}
+    </span>
+  </div>
+))}
