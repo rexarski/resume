@@ -8,6 +8,7 @@ import fs from 'node:fs/promises';
 const root = path.dirname(fileURLToPath(import.meta.url)) + '/..';
 const indexHtml = path.resolve(root, 'dist/index.html');
 const outPdf = path.resolve(root, 'rui_qiu_resume.pdf');
+const distPdf = path.resolve(root, 'dist/rui_qiu_resume.pdf');
 
 await fs.access(indexHtml).catch(() => {
   console.error('dist/index.html not found — run `astro build` first.');
@@ -40,4 +41,6 @@ if (pages !== 1) {
   process.exit(1);
 }
 
-console.log(`Wrote ${path.relative(root, outPdf)} (1 page).`);
+await fs.copyFile(outPdf, distPdf);
+
+console.log(`Wrote ${path.relative(root, outPdf)} (1 page) and copied to dist/.`);
