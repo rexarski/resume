@@ -1,0 +1,25 @@
+---
+// src/components/Header.astro
+interface Link { label: string; href: string }
+interface Props {
+  name: string;
+  email: string;
+  phone?: string;
+  website: Link;
+  links: Link[];
+}
+const { name, email, phone, website, links } = Astro.props;
+---
+<h1 class="name">{name}</h1>
+<div class="contact">
+  <a href={`mailto:${email}`}>{email}</a>
+  {phone && (<><span class="sep">·</span>{phone}</>)}
+  <span class="sep">·</span>
+  <a href={website.href}>{website.label}</a>
+  {links.map((l) => (
+    <>
+      <span class="sep">·</span>
+      <a href={l.href}>{l.label}</a>
+    </>
+  ))}
+</div>

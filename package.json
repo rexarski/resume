@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/build-pdf.mjs",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.0",
+    "marked": "^14.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.48.0",
+    "typescript": "^5.6.0"
+  }
+}
