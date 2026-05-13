@@ -26,7 +26,7 @@ try {
     path: outPdf,
     format: 'Letter',
     printBackground: true,
-    margin: { top: '0.5in', right: '0.5in', bottom: '0.5in', left: '0.5in' },
+    margin: { top: '0.35in', right: '0.5in', bottom: '0.35in', left: '0.5in' },
     tagged: true,
   });
 } finally {

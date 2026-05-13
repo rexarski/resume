@@ -1,8 +1,7 @@
-# src/content/resume/rui-qiu.yaml
 name: Rui Qiu
 
 contact:
-  email: rq47@georgetown.edu
+  email: qiurui416@gmail.com
   phone: "(571) 363-5917"
   website:
     label: rexarski.com
@@ -13,37 +12,37 @@ contact:
     - label: linkedin/rqiu
       href: https://www.linkedin.com/in/rqiu
 
-education:
-  - school: Georgetown University
-    location: Washington D.C., United States
-    degree: "Master of Science in Data Science and Analytics. cGPA: 4.0"
-    dates: Aug. 2021 – May 2023
-  - school: The Australian National University
-    location: Canberra, Australia
-    degree: Master of Science in Statistics
-    dates: Feb. 2017 – Dec. 2018
-  - school: University of Toronto
-    location: Toronto, Canada
-    degree: Honors B.Sc. with Distinction (Maths, Statistics, Computer Science)
-    dates: Sept. 2011 – June 2016
-
 skills:
   - category: Programming
-    items: Python, R, SQL, JavaScript, HTML, CSS, Java
+    items: Python, R, SQL, Scala, JavaScript, HTML, CSS
+
   - category: Machine Learning
-    items: pytorch, langchain, tidyverse, tidymodels, caret, scikit-learn, numpy, pandas
+    items: XGBoost, scikit-learn, pytorch, langchain, tidyverse, tidymodels, numpy, pandas
+
   - category: Visualization
-    items: ggplot2, Shiny, d3.js, matplotlib, seaborn, plotly, leaflet, bokeh
+    items: ggplot2, Shiny, d3.js, matplotlib, seaborn, plotly, leaflet
+
   - category: Data Science
-    items: A/B testing, ETL pipelines, feature engineering, NLP, time series, PCA, hypothesis testing
+    items: A/B testing, feature engineering, model interpretability, counterfactual explanation, NLP, time series, hypothesis testing
+
   - category: Big Data & Tooling
-    items: AWS (EC2, EMR, S3, SageMaker), Azure, Databricks, Spark, Hadoop, MongoDB, Docker, Linux, Hugo, Figma
+    items: PySpark, Spark ML, Databricks, MLflow, Delta Lake, AWS (EC2, EMR, S3, SageMaker), Azure, Docker, Linux, Hugo
 
 experience:
+  - company: Navy Federal Credit Union
+    location: Vienna, Virginia
+    title: Principal Data Scientist
+    dates: July 2023 – Present
+    bullets:
+      - "Built **XGBoost multiclass classification** models for credit card product propensity, deployed end-to-end in **Spark ML pipelines** on Databricks with MLflow tracking and Delta Lake; supports cross-organizational business units with data-driven member targeting."
+      - "Prototyped LLM-based pipelines for call center content processing within the data science department, evaluating summarization and intent classification capabilities for operational efficiency."
+      - "Expanded the MLOps engineering toolkit with reusable utility functions and documented standards, reducing onboarding friction and promoting consistent data science practices across teams."
+      - "Developed model interpretability artifacts — including **SHAP** analysis and **DiCE** counterfactual explanations — to satisfy Model Risk Management requirements and translate complex model behavior into actionable narratives for non-technical stakeholders."
+
   - company: International Finance Corporation (World Bank Group)
     location: Washington, D.C.
     title: Data Scientist
-    dates: May 2022 – Present
+    dates: May 2022 – May 2023
     bullets:
       - "Leveraged GPT-3.5 and **LangChain** to enable contextual Q&A on IFC's ESG reports, saving ~90% of analyst extraction time."
       - "Fine-tuned **ClimateBERT** on climate-related downstream tasks, improving fact-checking accuracy by 6%."
@@ -77,26 +76,45 @@ experience:
       - "Conducted market competition analysis using scraped data to inform initial product planning."
       - "Developed functional prototypes that improved client communication efficiency by 30%."
 
+education:
+  - school: Georgetown University
+    location: Washington D.C., United States
+    degree: "Master of Science in Data Science and Analytics. cGPA: 4.0"
+    dates: Aug. 2021 – May 2023
+
+  - school: The Australian National University
+    location: Canberra, Australia
+    degree: Master of Science in Statistics
+    dates: Feb. 2017 – Dec. 2018
+
+  - school: University of Toronto
+    location: Toronto, Canada
+    degree: Honors B.Sc. with Distinction (Maths, Statistics, Computer Science)
+    dates: Sept. 2011 – June 2016
+
 projects:
+  - name: yasqat
+    description: A Python package for sequence analytics, supporting multi-task analysis of behavioral event streams with a modular, composable API.
+    links:
+      - label: Repository
+        href: https://github.com/rexarski/yasqat
+
   - name: What Ingredients Are You Tasting In Authentic Japanese Flavors?
     description: Comprehensive interactive visualization on Japanese cuisine with D3, plotly and leaflet.
     links:
       - label: Website
         href: https://celeritasml.github.io/project-japanese-cuisine/
+
   - name: Basketball Analytics and Beyond
     description: A project on various basketball-related topics, both on-court and off-court.
     links:
       - label: Website
         href: https://rexarski.github.io/bba
+
   - name: tarantino
     description: An R package generating color palettes inspired by Quentin Tarantino's films for visualization.
     links:
       - label: R-Weekly
         href: https://rweekly.org/2021-W14.html
-      - label: repository
-        href: https://github.com/rexarski/tarantino
-  - name: "@canberramapbot"
-    description: A Twitter bot that uses Mapbox and Twitter APIs to post bird's-eye views over Canberra.
-    links:
       - label: Repository
-        href: https://github.com/rexarski/canberramapbot
+        href: https://github.com/rexarski/tarantino

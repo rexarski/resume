@@ -11,15 +11,15 @@
 
   /* Typography */
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  --fs-name:    21pt;
-  --fs-section: 11pt;
-  --fs-body:    9.25pt;
-  --fs-meta:    8.75pt;
-  --lh-body:    1.28;
-  --lh-tight:   1.15;
+  --fs-name:    19pt;
+  --fs-section: 10pt;
+  --fs-body:    8.75pt;
+  --fs-meta:    8.25pt;
+  --lh-body:    1.22;
+  --lh-tight:   1.1;
 
   /* Rhythm */
-  --space-section: 8pt;
-  --space-entry:   4pt;
-  --space-bullet:  1.5pt;
+  --space-section: 5pt;
+  --space-entry:   2.5pt;
+  --space-bullet:  0.75pt;
 }

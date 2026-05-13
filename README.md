@@ -69,7 +69,7 @@ Layout rules and component-level styles live in [`src/styles/screen.css`](./src/
 The build fails with a one-page guard. Knobs to turn, in order:
 
 1. Trim bullets.
-2. Lower `--fs-body` (currently `9.25pt`) by 0.25pt at a time.
+2. Lower `--fs-body` (currently `8.75pt`) by 0.25pt at a time.
 3. Reduce `--space-section` and `--space-entry`.
 
 ## Deploy

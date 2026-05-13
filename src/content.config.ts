@@ -1,5 +1,5 @@
-// src/content/config.ts
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const link = z.object({
   label: z.string(),
@@ -7,7 +7,7 @@ const link = z.object({
 });
 
 const resume = defineCollection({
-  type: 'data',
+  loader: glob({ pattern: '**/*.yaml', base: './src/content/resume' }),
   schema: z.object({
     name: z.string(),
     contact: z.object({
